@@ -1,0 +1,304 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Додає висоту на всю сторінку */
+    background: url('photo/usi-rezultaty_n-1.jpg') no-repeat center center fixed;
+    background-size: cover; /* Змінив на cover для кращого вигляду фону */
+    backdrop-filter: blur(10px);
+    color: #333;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Дозволяє wrapper займати всю доступну висоту */
+}
+
+/* Основні стилі для хедера */
+header {
+    background-color: #0073e6;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Основні стилі для вмісту хедера */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header-content h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 100px;
+    margin: 20px;
+    white-space: nowrap;
+}
+
+.header-content-image {
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.header-content-image img {
+    width: 100px;
+    margin: 0 20px;
+}
+
+.header-content a {
+    text-decoration: none;
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+nav {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Стилі для навігаційних посилань */
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 20px 10px;
+    margin: 0 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Підсвічування лише тексту при наведенні */
+.nav-link:hover {
+    color: #f5a623;
+}
+
+/* Підсвічування активної сторінки (поточного) */
+.nav-link.active {
+    color: #f5a623;
+}
+
+main {
+    flex: 1; /* Дозволяє main займати всю доступну висоту */
+}
+
+h1, h2 {
+    color: #ffffff;
+}
+
+.team-description {
+    padding: 20px;
+}
+
+/* досягнення */
+
+.team-achievements-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Напівпрозорий чорний фон */
+}
+  
+.team-achievements-box {
+    width: 60%; /* Текст займає 60% ширини */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Бокс для тексту з білим напівпрозорим фоном */
+    border-radius: 10px;
+}
+
+.team-achievements-box h2 {
+    font-size: 2rem;
+    color: #1e90ff; /* Синій колір заголовка */
+    margin-bottom: 15px;
+    }
+
+.team-achievements-box ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.team-achievements-box ul li {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.gallery-box {
+    width: 35%; /* Галерея займає 35% ширини */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.gallery-box img {
+    width: 100%; /* Фото адаптуються під ширину контейнера */
+    height: 410px; /* Фіксована висота */
+    object-fit: cover; /* Фотографії будуть обрізатися, щоб заповнити контейнер пропорційно */
+    border-radius: 10px;
+    transition: opacity 1s ease;
+}
+
+/* Секція гравців*/
+.team-players {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #5f000081;
+}
+
+.team-players-h h2 {
+    background-color: #5f000081;
+    font-family: 'Oswald', sans-serif;
+    font-size: 64px; /* Більший шрифт для заголовку */
+    color: #ffffff; /* Голубий колір заголовку */
+    text-align: Left;
+    padding: 40px;
+    margin: 0;
+}
+
+.team-description {
+    background-color: rgba(52, 52, 52, 0.542); /* Напівпрозорий синій фон */
+    color: #ffffff; /* Білий текст */
+    max-width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    font-family: 'Roboto', sans-serif; /* Модерний і читабельний шрифт */
+    text-align: left;
+}
+
+.team-description h1 {
+    font-size: 36px; /* Розмір заголовка */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.team-description p {
+    font-size: 18px; /* Розмір тексту */
+    line-height: 1.6; /* Міжрядковий інтервал для покращення читабельності */
+    margin-bottom: 20px;
+}
+.team-achievements ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.player-card {
+    background-color: #002855;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s;
+    box-sizing: border-box;
+}
+
+.player-card img {
+    width: 150px;
+    height: 300;
+    border-radius: 50%;
+}
+
+.player-card:hover {
+    transform: scale(1.1);
+}
+
+/* Футер */
+footer {
+    background-color: #002855;
+    color: white;
+    padding: 20px 0;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Контейнер для вмісту футера */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Логотип у футері */
+.footer-logo img {
+    width: 100px;
+}
+
+/* Навігація у футері */
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.footer-nav ul li {
+    margin: 0 15px;
+}
+
+.footer-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-nav ul li a:hover {
+    color: #f5a623;
+}
+
+/* Соціальні іконки */
+.footer-social a img {
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.footer-social a:hover img {
+    transform: scale(1.2);
+}
+
+/* Контактна інформація */
+.footer-contact p {
+    margin: 5px 0;
+}
+
+/* Нижній футер */
+.footer-bottom {
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+

@@ -1,0 +1,210 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background: url('photo/usi-rezultaty_n-1.jpg') no-repeat center center fixed;
+    background-size: cover; /* Змінив на cover для кращого вигляду фону */
+    backdrop-filter: blur(10px);
+    color: #333;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Основні стилі для хедера */
+header {
+    background-color: #0073e6;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Основні стилі для вмісту хедера */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header-content h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 100px;
+    margin: 20px;
+    white-space: nowrap;
+}
+
+.header-content-image {
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.header-content-image img {
+    width: 100px;
+    margin: 0 20px;
+}
+
+.header-content a {
+    text-decoration: none;
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+nav {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Стилі для навігаційних посилань */
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 20px 10px;
+    margin: 0 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Підсвічування лише тексту при наведенні */
+.nav-link:hover {
+    color: #f5a623;
+}
+
+/* Підсвічування активної сторінки (поточної) */
+.nav-link.active {
+    color: #f5a623;
+}
+
+/* основний зміст*/
+.news-details {
+    background: rgba(51, 51, 51, 0.8); /* Напівпрозорий фон */
+    padding: 20px;
+    width: 100%; /* Ширина на всю ширину сайту */
+    box-sizing: border-box; /* Урахування padding і border в ширині */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.news-details img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.news-details h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white; /* Колір тексту */
+}
+
+.news-details p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: white; /* Колір тексту */
+    max-width: 800px; /* Ширина текстового блоку */
+    text-align: left; /* Центрування тексту */
+    margin-bottom: 15px; /* Міжрядковий відступ */
+}
+
+
+/* Футер */
+footer {
+    background-color: #002855;
+    color: white;
+    padding: 40px 0;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+/* Контейнер для вмісту футера */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Логотип у футері */
+.footer-logo img {
+    width: 100px;
+}
+
+/* Навігація у футері */
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.footer-nav ul li {
+    margin: 0 15px;
+}
+
+.footer-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-nav ul li a:hover {
+    color: #f5a623;
+}
+
+/* Соціальні іконки */
+.footer-social a img {
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.footer-social a:hover img {
+    transform: scale(1.2);
+}
+
+/* Контактна інформація */
+.footer-contact p {
+    margin: 5px 0;
+}
+
+/* Нижній футер */
+.footer-bottom {
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
